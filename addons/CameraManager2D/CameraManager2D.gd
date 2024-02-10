@@ -32,6 +32,13 @@ func get_camera(index: int) -> Camera2D:
 	
 	return cameras[index]
 
+func remove_camera(index: int):
+	if index >= len(cameras):
+		return
+	
+	cameras[index].disconnect("enabled_changed", __on_one_of_camera_property_change)
+	cameras[index] = null
+
 func __on_one_of_camera_property_change(cam, prev, now):
 	if (prev == true) and (now == false):
 		return
