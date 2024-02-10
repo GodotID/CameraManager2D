@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ct77fgb0bhydk"]
 
 [ext_resource type="Script" path="res://test.gd" id="1_3guns"]
-[ext_resource type="Texture2D" path="res://icon.svg" id="1_x1js4"]
+[ext_resource type="Texture2D" uid="uid://bbkrb3tey6hp6" path="res://icon.svg" id="2_gnfam"]
 [ext_resource type="Script" path="res://addons/CameraManager2D/CameraManager2D.gd" id="3_feu3r"]
 [ext_resource type="Script" path="res://addons/CameraManager2D/ManagedCamera2D.gd" id="3_h3usp"]
 
@@ -11,14 +11,14 @@ script = ExtResource("1_3guns")
 [node name="Icon" type="Sprite2D" parent="."]
 modulate = Color(0.988235, 0, 0.54902, 1)
 position = Vector2(436, 325)
-texture = ExtResource("1_x1js4")
+texture = ExtResource("2_gnfam")
 
 [node name="Camera2D" type="Node2D" parent="Icon"]
 script = ExtResource("3_h3usp")
 
 [node name="Icon2" type="Sprite2D" parent="."]
 position = Vector2(670, 323)
-texture = ExtResource("1_x1js4")
+texture = ExtResource("2_gnfam")
 
 [node name="Camera2D" type="Node2D" parent="Icon2"]
 script = ExtResource("3_h3usp")
