@@ -1,11 +1,18 @@
 @tool
 extends Node2D
 
+## An array of ManagedCamera2D
+@export
 var cameras: Array[Node] = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	if len(cameras) > 0:
+		var myCams = cameras.duplicate()
+		cameras.clear()
+		
+		for cam in myCams:
+			add_camera(cam)
 
 ## Add a Camera2D to the `cameras` array.
 ## The function will not add the camera if it's already added.

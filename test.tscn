@@ -23,5 +23,6 @@ texture = ExtResource("2_gnfam")
 [node name="Camera2D" type="Node2D" parent="Icon2"]
 script = ExtResource("3_h3usp")
 
-[node name="CameraManager2D" type="Node2D" parent="."]
+[node name="CameraManager2D" type="Node2D" parent="." node_paths=PackedStringArray("cameras")]
 script = ExtResource("3_feu3r")
+cameras = [NodePath("../Icon/Camera2D"), NodePath("../Icon2/Camera2D")]
