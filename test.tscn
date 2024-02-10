@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ct77fgb0bhydk"]
 
 [ext_resource type="Script" path="res://test.gd" id="1_3guns"]
-[ext_resource type="Texture2D" uid="uid://ybih2nskvivi" path="res://icon.svg" id="1_x1js4"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="1_x1js4"]
 [ext_resource type="Script" path="res://addons/CameraManager2D/CameraManager2D.gd" id="3_feu3r"]
 [ext_resource type="Script" path="res://addons/CameraManager2D/ManagedCamera2D.gd" id="3_h3usp"]
 
